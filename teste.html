@@ -14,12 +14,16 @@
         function apagarLampada() {
             document.getElementById("apagada").src = "img/lampada-apagada.jpg";
         }
+
+        function quebrarLampada() {
+            document.getElementById("apagada").src = "img/lampada-quebrada.jpg";
+        }
     </script>
 </head>
 
 <body>
     <h1>testando javascript </h1>
-    <img src="img/lampada-apagada.jpg" alt="" id="apagada" onmousemove="acenderLampada()" onmouseout="apagarLampada()" />
+    <img src="img/lampada-apagada.jpg" alt="" id="apagada" onmouseover="acenderLampada()" onmouseout="apagarLampada()" onclick="quabrarLampada()" />
 
 
 </body>
